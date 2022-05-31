@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		3B37EA232845B9E9002EE575 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B37EA222845B9E9002EE575 /* AppDelegate.swift */; };
 		3B37EA252845B9E9002EE575 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B37EA242845B9E9002EE575 /* SceneDelegate.swift */; };
-		3B37EA272845B9E9002EE575 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B37EA262845B9E9002EE575 /* ViewController.swift */; };
+		3B37EA272845B9E9002EE575 /* GeotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B37EA262845B9E9002EE575 /* GeotificationsViewController.swift */; };
 		3B37EA2A2845B9E9002EE575 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B37EA282845B9E9002EE575 /* Main.storyboard */; };
 		3B37EA2C2845B9EA002EE575 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B37EA2B2845B9EA002EE575 /* Assets.xcassets */; };
 		3B37EA2F2845B9EA002EE575 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B37EA2D2845B9EA002EE575 /* LaunchScreen.storyboard */; };
+		3B37EA372845BE56002EE575 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B37EA362845BE56002EE575 /* Utilities.swift */; };
+		3B37EA392845C07C002EE575 /* Geotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B37EA382845C07C002EE575 /* Geotification.swift */; };
+		3B37EA3B28461E32002EE575 /* AddGeotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B37EA3A28461E32002EE575 /* AddGeotificationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3B37EA1F2845B9E9002EE575 /* MyAppleGeo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyAppleGeo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B37EA222845B9E9002EE575 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3B37EA242845B9E9002EE575 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3B37EA262845B9E9002EE575 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3B37EA262845B9E9002EE575 /* GeotificationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeotificationsViewController.swift; sourceTree = "<group>"; };
 		3B37EA292845B9E9002EE575 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3B37EA2B2845B9EA002EE575 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3B37EA2E2845B9EA002EE575 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3B37EA302845B9EA002EE575 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B37EA362845BE56002EE575 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		3B37EA382845C07C002EE575 /* Geotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Geotification.swift; sourceTree = "<group>"; };
+		3B37EA3A28461E32002EE575 /* AddGeotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddGeotificationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,11 +64,14 @@
 			children = (
 				3B37EA222845B9E9002EE575 /* AppDelegate.swift */,
 				3B37EA242845B9E9002EE575 /* SceneDelegate.swift */,
-				3B37EA262845B9E9002EE575 /* ViewController.swift */,
+				3B37EA262845B9E9002EE575 /* GeotificationsViewController.swift */,
 				3B37EA282845B9E9002EE575 /* Main.storyboard */,
 				3B37EA2B2845B9EA002EE575 /* Assets.xcassets */,
 				3B37EA2D2845B9EA002EE575 /* LaunchScreen.storyboard */,
 				3B37EA302845B9EA002EE575 /* Info.plist */,
+				3B37EA362845BE56002EE575 /* Utilities.swift */,
+				3B37EA382845C07C002EE575 /* Geotification.swift */,
+				3B37EA3A28461E32002EE575 /* AddGeotificationViewController.swift */,
 			);
 			path = MyAppleGeo;
 			sourceTree = "<group>";
@@ -138,8 +147,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B37EA272845B9E9002EE575 /* ViewController.swift in Sources */,
+				3B37EA3B28461E32002EE575 /* AddGeotificationViewController.swift in Sources */,
+				3B37EA272845B9E9002EE575 /* GeotificationsViewController.swift in Sources */,
 				3B37EA232845B9E9002EE575 /* AppDelegate.swift in Sources */,
+				3B37EA372845BE56002EE575 /* Utilities.swift in Sources */,
+				3B37EA392845C07C002EE575 /* Geotification.swift in Sources */,
 				3B37EA252845B9E9002EE575 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
