@@ -45,7 +45,7 @@ extension SceneDelegate: CLLocationManagerDelegate {
             notificationContent.sound = .default
             notificationContent.badge = UIApplication.shared.applicationIconBadgeNumber + 1 as NSNumber
             let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 1, repeats: false)
-            let request = UNNotificationRequest(identifier: "location changed", content: notificationContent, trigger: trigger)
+            let request = UNNotificationRequest(identifier: "location_change", content: notificationContent, trigger: trigger)
             UNUserNotificationCenter.current().add(request) { error in
                 if let error =  error {
                     print("Error: \(error)")

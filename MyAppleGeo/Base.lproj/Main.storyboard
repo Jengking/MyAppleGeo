@@ -58,11 +58,13 @@
                     </view>
                     <navigationItem key="navigationItem" title="Geotifications: 0" id="VmC-T4-QA6">
                         <barButtonItem key="leftBarButtonItem" image="location.fill.viewfinder" catalog="system" id="ffi-ac-rL0">
+                            <color key="tintColor" name="AccentColor"/>
                             <connections>
                                 <action selector="zoomToCurrentLocationWithSender:" destination="WzX-8d-Yac" id="1ZO-KO-pDq"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="U7P-X7-8Jr">
+                            <color key="tintColor" name="AccentColor"/>
                             <connections>
                                 <segue destination="av2-sR-IfN" kind="presentation" identifier="addGeotification" id="H9U-Yl-9cS"/>
                             </connections>
@@ -233,17 +235,20 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Add Geotification" id="6ol-Mv-yHr">
                         <barButtonItem key="leftBarButtonItem" title="Cancel" id="yzj-gC-Ozy">
+                            <color key="tintColor" name="AccentColor"/>
                             <connections>
                                 <action selector="onCancelWithSender:" destination="X9v-PL-Jde" id="MLj-Ub-FNh"/>
                             </connections>
                         </barButtonItem>
                         <rightBarButtonItems>
                             <barButtonItem systemItem="add" id="09v-Wg-wJn">
+                                <color key="tintColor" name="AccentColor"/>
                                 <connections>
                                     <action selector="onAddWithSender:" destination="X9v-PL-Jde" id="P21-Dd-8iQ"/>
                                 </connections>
                             </barButtonItem>
                             <barButtonItem image="location.fill.viewfinder" catalog="system" id="GVP-aC-UMa" userLabel="CurrentLocation">
+                                <color key="tintColor" name="AccentColor"/>
                                 <connections>
                                     <action selector="onZoomToCurrentLocationWithSender:" destination="X9v-PL-Jde" id="G0L-lZ-82w"/>
                                 </connections>
@@ -267,6 +272,9 @@
     <resources>
         <image name="location.fill.viewfinder" catalog="system" width="128" height="115"/>
         <image name="mappin" catalog="system" width="105" height="128"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="rw-green">
             <color red="0.0" green="0.40799999237060547" blue="0.21600000560283661" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
